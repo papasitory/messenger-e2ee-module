@@ -11,7 +11,7 @@
 - tests/ - тесты
 
 ## Сборка
-CMake:
-mkdir build && cd build
-cmake ..
-make
+CMake:  
+mkdir build && cd build  
+cmake ..  
+make  
