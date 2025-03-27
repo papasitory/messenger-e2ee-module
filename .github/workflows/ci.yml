@@ -22,11 +22,14 @@ jobs:
         ssh-strict: true
         persist-credentials: true
         clean: true
-        sparse-checkout-cone-mode: true
         fetch-depth: 1
         fetch-tags: false
         lfs: false
         submodules: false
+
+    - name: Configure Git safe.dir (Windows)
+      if: runner.os == 'Windows'
+      run: git config --global --add safe.directory "${{ github.workspace }}"
 
     - name: Setup Node.js
       uses: actions/setup-node@v3
