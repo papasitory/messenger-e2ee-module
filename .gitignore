@@ -1,10 +1,16 @@
-*.exe
-*.out
-*.dll
-*.so
+node_modules/
 
-/build/
-/bin/
+dist/
 
-*.vscode/
-*.idea/
+logs/
+*.log
+
+tmp/
+temp/
+
+.env
+
+.vscode/
+.idea/
+
+docker-compose.override.yml

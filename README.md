@@ -7,7 +7,7 @@
 
 ## Установка зависимостей
 git clone https://github.com/papasitory/messenger-e2ee-module.git  
-cd messenger-e2ee-module
+cd messenger-e2ee-module  
 npm install
 
 ## Сборка и запуск
