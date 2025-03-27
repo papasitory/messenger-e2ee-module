@@ -10,7 +10,7 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
 
     steps:
@@ -38,10 +38,13 @@ jobs:
         check-latest: true
 
     - name: Install dependencies
-      run: npm install -g typescript
+      run: npm install
 
     - name: Build project
-      run: tsc
+      run: npm run build
+
+    - name: Run tests
+      run: npm test
 
 #    - name: Run project
 #      run: node dist/index.js
