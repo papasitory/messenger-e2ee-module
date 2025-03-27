@@ -16,6 +16,17 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+      with:
+        repository: papasitory/messenger-e2ee-module
+        token: ${{ secrets.GITHUB_TOKEN }}
+        ssh-strict: true
+        persist-credentials: true
+        clean: true
+        sparse-checkout-cone-mode: true
+        fetch-depth: 1
+        fetch-tags: false
+        lfs: false
+        submodules: false
 
     - name: Setup Node.js
       uses: actions/setup-node@v3
