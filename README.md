@@ -1,12 +1,15 @@
 # Encryption Module Project
 
-Проект создания кросс-платформенной библиотеки для шифрования сообщений.
+Проект создания кросс-платформенного модуля для шифрования сообщений на TypeScript.
 
 ## Описание
-Библиотека на С++ для E2EE с использованием libsodium, OpenSSL и Crypto++.
+Модуль реализован на TypeScript и предназначен для обеспечения безопасного обмена сообщениями с использованием алгоритмов шифрования и цифровых подписей. 
 
-## Сборка
-CMake:  
-mkdir build && cd build  
-cmake ..  
-make  
+## Установка зависимостей
+git clone https://github.com/papasitory/messenger-e2ee-module.git  
+cd messenger-e2ee-module
+npm install
+
+## Сборка и запуск
+Для сборки: npx tsc  
+Для запуска: npm start
