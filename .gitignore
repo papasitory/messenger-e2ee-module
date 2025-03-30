@@ -1,0 +1,16 @@
+node_modules/
+
+dist/
+
+logs/
+*.log
+
+tmp/
+temp/
+
+.env
+
+.vscode/
+.idea/
+
+docker-compose.override.yml

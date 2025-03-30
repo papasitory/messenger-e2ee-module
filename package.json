@@ -1,21 +1,36 @@
 {
-  "dependencies": {
-    "@matrix-org/olm": "^3.2.15",
-    "buffer": "^6.0.3",
-    "crypto": "^1.0.1",
-    "tweetnacl": "^1.0.3"
-  },
-  "name": "cryptolib",
+  "name": "messenger-e2ee-module",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "A cross-platform encryption module for messengers",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "tests"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/papasitory/messenger-e2ee-module.git"
+  },
+  "keywords": [
+    "encryption",
+    "e2ee",
+    "messenger",
+    "typescript"
+  ],
+  "author": "ALPSTY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/papasitory/messenger-e2ee-module/issues"
+  },
+  "homepage": "https://github.com/papasitory/messenger-e2ee-module#readme",
   "devDependencies": {
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
     "@types/node": "^22.13.14"
   }
 }
