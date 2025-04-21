@@ -1,5 +1,7 @@
 // src/asymmetric/ecdh.ts
 import { KeyPair, AsymmetricKeyExchangeAlgorithm } from '../types/interfaces';
+import { hkdf } from '@noble/hashes/hkdf';
+import { sha256 } from '@noble/hashes/sha256';
 import { CryptoUtils } from '../utils/crypto-utils';
 
 export class ECDH implements AsymmetricKeyExchangeAlgorithm {
@@ -37,8 +39,15 @@ export class ECDH implements AsymmetricKeyExchangeAlgorithm {
       }
     } else if (typeof process !== 'undefined' && process.versions && process.versions.node) {
       try {
+        const nodeCurveMap: Record<string, string> = {
+          'P-256': 'prime256v1',
+          'P-384': 'secp384r1',
+          'P-521': 'secp521r1'
+        };
+        
+        const resolvedCurve = nodeCurveMap[curve] || curve;
         const crypto = await import('crypto');
-        const ecdh = crypto.createECDH(curve);
+        const ecdh = crypto.createECDH(resolvedCurve);
         ecdh.generateKeys();
 
         return {
@@ -54,8 +63,17 @@ export class ECDH implements AsymmetricKeyExchangeAlgorithm {
   }
 
   static async deriveSharedSecret(privateKey: Uint8Array, peerPublicKey: Uint8Array, curve: string = 'P-256'): Promise<Uint8Array> {
+    const nodeCurveMap: Record<string, string> = {
+      'P-256': 'prime256v1',
+      'P-384': 'secp384r1',
+      'P-521': 'secp521r1'
+    };
+    
+    const resolvedCurve = nodeCurveMap[curve] || curve;
+    
     if (typeof window !== 'undefined' && window.crypto && window.crypto.subtle) {
       try {
+        
         const privateKeyImported = await window.crypto.subtle.importKey(
           'pkcs8',
           privateKey,
@@ -95,7 +113,7 @@ export class ECDH implements AsymmetricKeyExchangeAlgorithm {
     } else if (typeof process !== 'undefined' && process.versions && process.versions.node) {
       try {
         const crypto = await import('crypto');
-        const ecdh = crypto.createECDH(curve);
+        const ecdh = crypto.createECDH(resolvedCurve);
         ecdh.setPrivateKey(Buffer.from(privateKey));
         const sharedSecret = ecdh.computeSecret(Buffer.from(peerPublicKey));
         return new Uint8Array(sharedSecret);
@@ -106,4 +124,24 @@ export class ECDH implements AsymmetricKeyExchangeAlgorithm {
     }
     throw new Error('Crypto API is not available in this environment');
   }
+}
+
+export function deriveSymmetricKey(
+  sharedSecret: Uint8Array,
+  salt: Uint8Array = new Uint8Array(0),
+  info: Uint8Array = new Uint8Array(0),
+  length: number = 32
+): Uint8Array {
+  return hkdf(sha256, sharedSecret, salt, info, length);
+}
+export async function deriveAESKeyFromECDH(
+  privateKey: Uint8Array,
+  peerPublicKey: Uint8Array,
+  curve: string = 'P-256',
+  salt?: Uint8Array,
+  info?: Uint8Array,
+  keyLength: number = 32
+): Promise<Uint8Array> {
+  const sharedSecret = await ECDH.deriveSharedSecret(privateKey, peerPublicKey, curve);
+  return deriveSymmetricKey(sharedSecret, salt, info, keyLength);
 }

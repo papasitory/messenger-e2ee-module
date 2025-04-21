@@ -32,7 +32,7 @@ export class Camellia implements SymmetricEncryptionAlgorithm {
       const forgeIv = forge.util.createBuffer(Buffer.from(iv).toString('binary'));
 
       // Create cipher
-      const cipher = forge.cipher.createCipher('AES-CBC', forgeKey); // Replace 'camellia' with a supported algorithm like 'AES-CBC'
+      const cipher = forge.cipher.createCipher('CAMELLIA-CBC', forgeKey); // Replace 'camellia' with a supported algorithm like 'AES-CBC'
       cipher.start({ iv: forgeIv });
       cipher.update(forgeData);
       const success = cipher.finish();
