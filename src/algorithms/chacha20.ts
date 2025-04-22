@@ -2,7 +2,6 @@
 import { EncryptionResult, SymmetricEncryptionAlgorithm } from '../types/interfaces';
 import { CryptoUtils } from '../utils/crypto-utils';
 
-
 let chacha20Module: any = null;
 
 export class ChaCha20 implements SymmetricEncryptionAlgorithm {
@@ -22,7 +21,9 @@ export class ChaCha20 implements SymmetricEncryptionAlgorithm {
     if (chacha20Module) return;
 
     try {
-      chacha20Module = await import('chacha20');
+      const mod = await import('chacha20');
+      // ✅ исправление: CommonJS модуль экспортирует класс напрямую, а не как объект с именованным экспортом
+      chacha20Module = mod.default || mod;
     } catch (error) {
       if (error instanceof Error) {
         throw new Error(`Failed to load ChaCha20 module: ${error.message}. Make sure chacha20 is installed.`);
@@ -45,7 +46,8 @@ export class ChaCha20 implements SymmetricEncryptionAlgorithm {
     try {
       const iv = nonce || (await CryptoUtils.randomBytes(12));
 
-      const chacha = new chacha20Module.ChaCha20(key, iv);
+      // ✅ исправление: используем правильный класс из модуля
+      const chacha = new chacha20Module(key, iv);
 
       const ciphertext = new Uint8Array(data.length);
       chacha.update(ciphertext, data);
@@ -66,7 +68,7 @@ export class ChaCha20 implements SymmetricEncryptionAlgorithm {
     await this._initializeModule();
 
     try {
-      const chacha = new chacha20Module.ChaCha20(key, encResult.iv);
+      const chacha = new chacha20Module(key, encResult.iv);
 
       const plaintext = new Uint8Array(encResult.ciphertext.length);
       chacha.update(plaintext, encResult.ciphertext);
