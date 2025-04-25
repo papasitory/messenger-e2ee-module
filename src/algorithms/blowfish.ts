@@ -14,7 +14,7 @@ export class Blowfish implements SymmetricEncryptionAlgorithm {
     if (!iv) {
       iv = await CryptoUtils.randomBytes(8);
     }
-    return Blowfish.encrypt(data, key);
+    return Blowfish.encrypt(data, key, iv);
   }
 
   async decrypt(result: EncryptionResult, key: Uint8Array): Promise<Uint8Array> {
@@ -23,16 +23,14 @@ export class Blowfish implements SymmetricEncryptionAlgorithm {
 
   static async generateKey(keySize: number = 256): Promise<Uint8Array> {
     if (keySize < 32 || keySize > 448 || keySize % 8 !== 0) {
-      throw new Error('Blowfish key size must be between 32 and 448 bits and a multiple of 8');
+      throw new Error(`Invalid Blowfish key size: ${keySize} bits. Must be between 32 and 448 bits and a multiple of 8.`);
     }
     const keyBytes = keySize / 8;
     return CryptoUtils.randomBytes(keyBytes);
   }
 
-  static async encrypt(data: Uint8Array, key: Uint8Array): Promise<EncryptionResult> {
+  static async encrypt(data: Uint8Array, key: Uint8Array, iv: Uint8Array): Promise<EncryptionResult> {
     try {
-      const iv = await CryptoUtils.randomBytes(8);
-
       let CryptoJS;
       if (typeof window !== 'undefined') {
         CryptoJS = await import('crypto-js');
@@ -57,7 +55,7 @@ export class Blowfish implements SymmetricEncryptionAlgorithm {
 
       return { ciphertext, iv };
     } catch (err) {
-      throw new Error(`Blowfish encryption failed: ${(err as Error).message}`);
+      throw new Error(`Blowfish encryption failed: ${err instanceof Error ? err.message : 'Unknown error'}`);
     }
   }
 
@@ -88,9 +86,9 @@ export class Blowfish implements SymmetricEncryptionAlgorithm {
       );
 
       const decryptedHex = decrypted.toString(CryptoJS.enc.Hex);
-      return new Uint8Array(decryptedHex.match(/.{1,2}/g).map((byte: string) => parseInt(byte, 16)));
+      return new Uint8Array(decryptedHex.match(/.{1,2}/g)!.map((byte: string) => parseInt(byte, 16)));
     } catch (err) {
-      throw new Error(`Blowfish decryption failed: ${(err as Error).message}`);
+      throw new Error(`Blowfish decryption failed: ${err instanceof Error ? err.message : 'Unknown error'}`);
     }
   }
 }

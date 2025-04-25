@@ -1,4 +1,3 @@
-// src/post-quantum/kyber.ts
 import { KeyPair, PostQuantumKeyExchangeAlgorithm } from '../types/interfaces';
 import { CryptoUtils } from '../utils/crypto-utils';
 
@@ -10,7 +9,7 @@ export class Kyber implements PostQuantumKeyExchangeAlgorithm {
     return await Kyber.generateKeyPair(variant);
   }
 
-  async encapsulate(publicKey: Uint8Array, options?: { variant?: string }): Promise<{ sharedSecret: Uint8Array; ciphertext: Uint8Array; }> {
+  async encapsulate(publicKey: Uint8Array, options?: { variant?: string }): Promise<{ sharedSecret: Uint8Array; ciphertext: Uint8Array }> {
     const variant = options?.variant || Kyber.KYBER768;
     return await Kyber.encapsulate(publicKey, variant);
   }
@@ -30,11 +29,11 @@ export class Kyber implements PostQuantumKeyExchangeAlgorithm {
 
     try {
       kyberModule = await import('pqc-kyber');
-    } catch (error) {
-      if (error instanceof Error) {
-        throw new Error(`Failed to load Kyber module: ${error.message}. Make sure pqc-kyber is installed.`);
+      if (!kyberModule.kyber512 || !kyberModule.kyber768 || !kyberModule.kyber1024) {
+        throw new Error('Kyber module is missing required algorithms (kyber512, kyber768, kyber1024).');
       }
-      throw new Error('Failed to load Kyber module: Unknown error. Make sure pqc-kyber is installed.');
+    } catch (error) {
+      throw new Error(`Failed to load Kyber module: ${error instanceof Error ? error.message : 'Unknown error'}. Make sure pqc-kyber is installed.`);
     }
   }
 
@@ -44,20 +43,17 @@ export class Kyber implements PostQuantumKeyExchangeAlgorithm {
     try {
       const kyberAlgo = kyberModule[variant];
       if (!kyberAlgo) {
-        throw new Error(`Unsupported Kyber variant: ${variant}`);
+        throw new Error(`Unsupported Kyber variant: ${variant}. Supported variants: ${[Kyber.KYBER512, Kyber.KYBER768, Kyber.KYBER1024].join(', ')}`);
       }
 
       const keyPair = kyberAlgo.keypair();
 
       return {
         publicKey: new Uint8Array(keyPair.publicKey),
-        privateKey: new Uint8Array(keyPair.secretKey)
+        privateKey: new Uint8Array(keyPair.secretKey),
       };
     } catch (error) {
-      if (error instanceof Error) {
-        throw new Error(`Kyber key generation failed: ${error.message}`);
-      }
-      throw new Error('Kyber key generation failed: Unknown error.');
+      throw new Error(`Kyber key generation failed for ${variant}: ${error instanceof Error ? error.message : 'Unknown error'}`);
     }
   }
 
@@ -70,19 +66,16 @@ export class Kyber implements PostQuantumKeyExchangeAlgorithm {
     try {
       const kyberAlgo = kyberModule[variant];
       if (!kyberAlgo) {
-        throw new Error(`Unsupported Kyber variant: ${variant}`);
+        throw new Error(`Unsupported Kyber variant: ${variant}. Supported variants: ${[Kyber.KYBER512, Kyber.KYBER768, Kyber.KYBER1024].join(', ')}`);
       }
       const encapsulated = kyberAlgo.encap(publicKey);
 
       return {
         sharedSecret: new Uint8Array(encapsulated.sharedSecret),
-        ciphertext: new Uint8Array(encapsulated.ciphertext)
+        ciphertext: new Uint8Array(encapsulated.ciphertext),
       };
     } catch (error) {
-      if (error instanceof Error) {
-        throw new Error(`Kyber encapsulation failed: ${error.message}`);
-      }
-      throw new Error('Kyber encapsulation failed: Unknown error.');
+      throw new Error(`Kyber encapsulation failed for ${variant}: ${error instanceof Error ? error.message : 'Unknown error'}`);
     }
   }
 
@@ -96,17 +89,14 @@ export class Kyber implements PostQuantumKeyExchangeAlgorithm {
     try {
       const kyberAlgo = kyberModule[variant];
       if (!kyberAlgo) {
-        throw new Error(`Unsupported Kyber variant: ${variant}`);
+        throw new Error(`Unsupported Kyber variant: ${variant}. Supported variants: ${[Kyber.KYBER512, Kyber.KYBER768, Kyber.KYBER1024].join(', ')}`);
       }
 
       const sharedSecret = kyberAlgo.decap(ciphertext, privateKey);
 
       return new Uint8Array(sharedSecret);
     } catch (error) {
-      if (error instanceof Error) {
-        throw new Error(`Kyber decapsulation failed: ${error.message}`);
-      }
-      throw new Error('Kyber decapsulation failed: Unknown error.');
+      throw new Error(`Kyber decapsulation failed for ${variant}: ${error instanceof Error ? error.message : 'Unknown error'}`);
     }
   }
 }

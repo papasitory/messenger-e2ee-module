@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for utils/crypto-utils.ts</title>
+    <title>Code coverage report for algorithms/ed25519.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">utils</a> crypto-utils.ts</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">algorithms</a> ed25519.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">62.29% </span>
+                <span class="strong">70% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>38/61</span>
+                <span class='fraction'>35/50</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">56.52% </span>
+                <span class="strong">57.14% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>13/23</span>
+                <span class='fraction'>24/42</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">62.5% </span>
+                <span class="strong">70% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>35/56</span>
+                <span class='fraction'>35/50</span>
             </div>
         
             
@@ -209,135 +209,32 @@
 <a name='L144'></a><a href='#L144'>144</a>
 <a name='L145'></a><a href='#L145'>145</a>
 <a name='L146'></a><a href='#L146'>146</a>
-<a name='L147'></a><a href='#L147'>147</a>
-<a name='L148'></a><a href='#L148'>148</a>
-<a name='L149'></a><a href='#L149'>149</a>
-<a name='L150'></a><a href='#L150'>150</a>
-<a name='L151'></a><a href='#L151'>151</a>
-<a name='L152'></a><a href='#L152'>152</a>
-<a name='L153'></a><a href='#L153'>153</a>
-<a name='L154'></a><a href='#L154'>154</a>
-<a name='L155'></a><a href='#L155'>155</a>
-<a name='L156'></a><a href='#L156'>156</a>
-<a name='L157'></a><a href='#L157'>157</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L147'></a><a href='#L147'>147</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">56x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">56x</span>
-<span class="cline-any cline-yes">110x</span>
-<span class="cline-any cline-yes">55x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-yes">37x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">31x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -346,190 +243,263 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// src/utils/crypto-utils.ts
-import { KeyPair, SerializedKeyPair, EncryptionResult, SerializedEncryptionResult } from '../types/interfaces';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { KeyPair, AsymmetricSignatureAlgorithm } from '../types/interfaces';
 &nbsp;
-export class CryptoUtils {
-  /**
-   * Генерирует заданное количество случайных байтов
-   */
-  static async randomBytes(length: number): Promise&lt;Uint8Array&gt; {
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof window !== 'undefined' &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >window.crypto)</span> {
-      const bytes = <span class="cstat-no" title="statement not covered" >new Uint8Array(length);</span>
-<span class="cstat-no" title="statement not covered" >      window.crypto.getRandomValues(bytes);</span>
-<span class="cstat-no" title="statement not covered" >      return bytes;</span>
-    } else if (typeof process !== 'undefined' &amp;&amp; process.versions &amp;&amp; process.versions.node) {
-      const crypto = await import('crypto');
-      return new Uint8Array(crypto.randomBytes(length));
-    }
-    throw new Error('Crypto API is not available in this environment');
+export class Ed25519 implements AsymmetricSignatureAlgorithm {
+  async generateKeyPair(): Promise&lt;KeyPair&gt; {
+    return Ed25519.generateKeyPair();
   }
 &nbsp;
-  /**
-   * Конвертирует Uint8Array в строку Base64
-   */
-  static toBase64(data: Uint8Array): string {
-    if (typeof btoa === 'function') {
-      // В браузере
-      const binary = Array.from(data)
-        .map(byte =&gt; String.fromCharCode(byte))
-        .join('');
-      return btoa(binary);
-    } else <span class="cstat-no" title="statement not covered" ><span class="missing-if-branch" title="if path not taken" >I</span><span class="missing-if-branch" title="else path not taken" >E</span>if (typeof Buffer !== 'undefined') {</span>
-      // В Node.js
-<span class="cstat-no" title="statement not covered" >      return Buffer.from(data).toString('base64');</span>
-    }
-<span class="cstat-no" title="statement not covered" >    throw new Error('Base64 encoding is not available in this environment');</span>
+  async sign(message: Uint8Array, privateKey: Uint8Array): Promise&lt;Uint8Array&gt; {
+    return Ed25519.sign(message, privateKey);
   }
 &nbsp;
-  /**
-   * Конвертирует строку Base64 в Uint8Array
-   */
-  static fromBase64(data: string): Uint8Array {
-    if (typeof atob === 'function') {
-      // В браузере
-      const binary = atob(data);
-      const bytes = new Uint8Array(binary.length);
-      for (let i = 0; i &lt; binary.length; i++) {
-        bytes[i] = binary.charCodeAt(i);
+  async verify(message: Uint8Array, signature: Uint8Array, publicKey: Uint8Array): Promise&lt;boolean&gt; {
+    return Ed25519.verify(message, signature, publicKey);
+  }
+&nbsp;
+  static async generateKeyPair(): Promise&lt;KeyPair&gt; {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof window !== 'undefined' &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >window.crypto </span>&amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >window.crypto.subtle)</span> {
+<span class="cstat-no" title="statement not covered" >      try {</span>
+        const keyPair = <span class="cstat-no" title="statement not covered" >await window.crypto.subtle.generateKey(</span>
+          {
+            name: 'Ed25519',
+          },
+          true,
+          ['sign', 'verify']
+        );
+&nbsp;
+        const publicKeyExported = <span class="cstat-no" title="statement not covered" >await window.crypto.subtle.exportKey('raw', keyPair.publicKey);</span>
+        const privateKeyExported = <span class="cstat-no" title="statement not covered" >await window.crypto.subtle.exportKey('pkcs8', keyPair.privateKey);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return {</span>
+          publicKey: new Uint8Array(publicKeyExported),
+          privateKey: new Uint8Array(privateKeyExported),
+        };
+      } catch (err: unknown) {
+<span class="cstat-no" title="statement not covered" >        throw new Error(`Ed25519 key generation failed in browser environment: ${err instanceof Error ? err.message : 'Unknown error'}`);</span>
       }
-      return bytes;
-    } else <span class="cstat-no" title="statement not covered" ><span class="missing-if-branch" title="if path not taken" >I</span><span class="missing-if-branch" title="else path not taken" >E</span>if (typeof Buffer !== 'undefined') {</span>
-      // В Node.js
-<span class="cstat-no" title="statement not covered" >      return new Uint8Array(Buffer.from(data, 'base64'));</span>
+    } else if (typeof process !== 'undefined' &amp;&amp; process.versions &amp;&amp; process.versions.node) {
+      try {
+        const crypto = await import('crypto');
+        const { publicKey, privateKey } = crypto.generateKeyPairSync('ed25519', {
+          publicKeyEncoding: { type: 'spki', format: 'der' },
+          privateKeyEncoding: { type: 'pkcs8', format: 'der' },
+        });
+&nbsp;
+        return {
+          publicKey: new Uint8Array(publicKey),
+          privateKey: new Uint8Array(privateKey),
+        };
+      } catch (err: unknown) {
+        throw new Error(`Ed25519 key generation failed in Node.js environment: ${err instanceof Error ? err.message : <span class="branch-1 cbranch-no" title="branch not covered" >'Unknown error'}</span>`);
+      }
     }
-<span class="cstat-no" title="statement not covered" >    throw new Error('Base64 decoding is not available in this environment');</span>
+    throw new Error('Ed25519 key generation not supported in this environment. Native crypto API is unavailable.');
   }
 &nbsp;
-  /**
-   * Сериализует пару ключей в формат, пригодный для хранения
-   */
-  static serializeKeyPair(keyPair: KeyPair): SerializedKeyPair {
-    return {
-      publicKey: this.toBase64(keyPair.publicKey),
-      privateKey: this.toBase64(keyPair.privateKey)
-    };
+  static async sign(message: Uint8Array, privateKey: Uint8Array): Promise&lt;Uint8Array&gt; {
+    if (privateKey.length &lt; 32) {
+      throw new Error(`Invalid private key length: ${privateKey.length} bytes. Expected at least 32 bytes for Ed25519.`);
+    }
+&nbsp;
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof window !== 'undefined' &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >window.crypto </span>&amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >window.crypto.subtle)</span> {
+<span class="cstat-no" title="statement not covered" >      try {</span>
+        const importedPrivateKey = <span class="cstat-no" title="statement not covered" >await window.crypto.subtle.importKey(</span>
+          'pkcs8',
+          privateKey,
+          {
+            name: 'Ed25519',
+          },
+          false,
+          ['sign']
+        );
+        const signature = <span class="cstat-no" title="statement not covered" >await window.crypto.subtle.sign(</span>
+          { name: 'Ed25519' },
+          importedPrivateKey,
+          message
+        );
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return new Uint8Array(signature);</span>
+      } catch (err: unknown) {
+<span class="cstat-no" title="statement not covered" >        throw new Error(`Ed25519 signing failed in browser environment: ${err instanceof Error ? err.message : 'Unknown error'}`);</span>
+      }
+    } else if (typeof process !== 'undefined' &amp;&amp; process.versions &amp;&amp; process.versions.node) {
+      try {
+        const crypto = await import('crypto');
+        const key = crypto.createPrivateKey({
+          key: Buffer.from(privateKey),
+          format: 'der',
+          type: 'pkcs8',
+        });
+&nbsp;
+        const signature = crypto.sign(null, Buffer.from(message), key);
+        return new Uint8Array(signature);
+      } catch (err: unknown) {
+        throw new Error(`Ed25519 signing failed in Node.js environment: ${err instanceof Error ? err.message : <span class="branch-1 cbranch-no" title="branch not covered" >'Unknown error'}</span>`);
+      }
+    }
+&nbsp;
+    throw new Error('Ed25519 signing not supported in this environment. Native crypto API is unavailable.');
   }
 &nbsp;
-  /**
-   * Десериализует пару ключей из строкового представления
-   */
-  static deserializeKeyPair(serialized: SerializedKeyPair): KeyPair {
-    return {
-      publicKey: this.fromBase64(serialized.publicKey),
-      privateKey: this.fromBase64(serialized.privateKey)
-    };
-  }
+  static async verify(message: Uint8Array, signature: Uint8Array, publicKey: Uint8Array): Promise&lt;boolean&gt; {
+    if (signature.length !== 64) {
+      throw new Error(`Invalid signature length: ${signature.length} bytes. Expected 64 bytes for Ed25519.`);
+    }
+    if (publicKey.length &lt; 32) {
+      throw new Error(`Invalid public key length: ${publicKey.length} bytes. Expected at least 32 bytes for Ed25519.`);
+    }
 &nbsp;
-  /**
-   * Сериализует результат шифрования в формат, пригодный для хранения
-   */
-  static serializeEncryptionResult(result: EncryptionResult): SerializedEncryptionResult {
-    const serialized: SerializedEncryptionResult = {
-      ciphertext: this.toBase64(result.ciphertext),
-      iv: this.toBase64(result.iv)
-    };
-    
-    if (result.authTag) {
-      serialized.authTag = this.toBase64(result.authTag);
-    }
-    
-    return serialized;
-  }
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof window !== 'undefined' &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >window.crypto </span>&amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >window.crypto.subtle)</span> {
+<span class="cstat-no" title="statement not covered" >      try {</span>
+        const importedPublicKey = <span class="cstat-no" title="statement not covered" >await window.crypto.subtle.importKey(</span>
+          'raw',
+          publicKey,
+          {
+            name: 'Ed25519',
+          },
+          false,
+          ['verify']
+        );
 &nbsp;
-  /**
-   * Десериализует результат шифрования из строкового представления
-   */
-  static deserializeEncryptionResult(serialized: SerializedEncryptionResult): EncryptionResult {
-    const result: EncryptionResult = {
-      ciphertext: this.fromBase64(serialized.ciphertext),
-      iv: this.fromBase64(serialized.iv)
-    };
-    
-    if (serialized.authTag) {
-      result.authTag = this.fromBase64(serialized.authTag);
-    }
-    
-    return result;
-  }
+<span class="cstat-no" title="statement not covered" >        return await window.crypto.subtle.verify(</span>
+          { name: 'Ed25519' },
+          importedPublicKey,
+          signature,
+          message
+        );
+      } catch (err: unknown) {
+<span class="cstat-no" title="statement not covered" >        throw new Error(`Ed25519 verification failed in browser environment: ${err instanceof Error ? err.message : 'Unknown error'}`);</span>
+      }
+    } else if (typeof process !== 'undefined' &amp;&amp; process.versions &amp;&amp; process.versions.node) {
+      try {
+        const crypto = await import('crypto');
+        const key = crypto.createPublicKey({
+          key: Buffer.from(publicKey),
+          format: 'der',
+          type: 'spki',
+        });
 &nbsp;
-  /**
-   * Преобразует строку в Uint8Array с использованием UTF-8 кодировки
-   */
-  static stringToBytes(str: string): Uint8Array {
-    if (typeof TextEncoder !== 'undefined') {
-      return new TextEncoder().encode(str);
-    } else <span class="cstat-no" title="statement not covered" ><span class="missing-if-branch" title="if path not taken" >I</span><span class="missing-if-branch" title="else path not taken" >E</span>if (typeof Buffer !== 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >      return new Uint8Array(Buffer.from(str, 'utf8'));</span>
+        return crypto.verify(null, Buffer.from(message), key, Buffer.from(signature));
+      } catch (err: unknown) {
+        throw new Error(`Ed25519 verification failed in Node.js environment: ${err instanceof Error ? err.message : <span class="branch-1 cbranch-no" title="branch not covered" >'Unknown error'}</span>`);
+      }
     }
-    
-    // Резервный вариант, если ни один из вышеперечисленных методов недоступен
-    const bytes = <span class="cstat-no" title="statement not covered" >new Uint8Array(str.length);</span>
-<span class="cstat-no" title="statement not covered" >    for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; str.length; i++) {</span>
-<span class="cstat-no" title="statement not covered" >      bytes[i] = str.charCodeAt(i) &amp; 0xff;</span>
-    }
-<span class="cstat-no" title="statement not covered" >    return bytes;</span>
-  }
 &nbsp;
-  /**
-   * Преобразует Uint8Array в строку с использованием UTF-8 кодировки
-   */
-  static bytesToString(bytes: Uint8Array): string {
-    if (typeof TextDecoder !== 'undefined') {
-      return new TextDecoder('utf-8').decode(bytes);
-    } else <span class="cstat-no" title="statement not covered" ><span class="missing-if-branch" title="if path not taken" >I</span><span class="missing-if-branch" title="else path not taken" >E</span>if (typeof Buffer !== 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >      return Buffer.from(bytes).toString('utf8');</span>
-    }
-    
-    // Резервный вариант, если ни один из вышеперечисленных методов недоступен
-    let result = <span class="cstat-no" title="statement not covered" >'';</span>
-<span class="cstat-no" title="statement not covered" >    for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; bytes.length; i++) {</span>
-<span class="cstat-no" title="statement not covered" >      result += String.fromCharCode(bytes[i]);</span>
-    }
-<span class="cstat-no" title="statement not covered" >    return result;</span>
-  }
-&nbsp;
-  /**
-   * Сравнивает два Uint8Array в защищенном от тайминговых атак режиме
-   */
-  static constantTimeEqual(a: Uint8Array, b: Uint8Array): boolean {
-    if (a.length !== b.length) return false;
-    
-    let result = 0;
-    for (let i = 0; i &lt; a.length; i++) {
-      result |= a[i] ^ b[i];
-    }
-    
-    return result === 0;
+    throw new Error('Ed25519 verification not supported in this environment. Native crypto API is unavailable.');
   }
 }</pre></td></tr></table></pre>
 

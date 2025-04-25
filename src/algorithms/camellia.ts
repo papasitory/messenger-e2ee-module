@@ -20,6 +20,10 @@ export class Camellia implements SymmetricEncryptionAlgorithm {
   }
 
   static async generateKey(keySize: 128 | 192 | 256 = 256): Promise<Uint8Array> {
+    const validKeySizes = [128, 192, 256];
+    if (!validKeySizes.includes(keySize)) {
+      throw new Error(`Invalid Camellia key size: ${keySize} bits. Must be 128, 192, or 256 bits.`);
+    }
     const keyBytes = keySize / 8;
     return CryptoUtils.randomBytes(keyBytes);
   }
@@ -32,13 +36,13 @@ export class Camellia implements SymmetricEncryptionAlgorithm {
       const forgeIv = forge.util.createBuffer(Buffer.from(iv).toString('binary'));
 
       // Create cipher
-      const cipher = forge.cipher.createCipher('CAMELLIA-CBC', forgeKey); // Replace 'camellia' with a supported algorithm like 'AES-CBC'
+      const cipher = forge.cipher.createCipher('CAMELLIA-CBC', forgeKey);
       cipher.start({ iv: forgeIv });
       cipher.update(forgeData);
       const success = cipher.finish();
 
       if (!success) {
-        throw new Error('Camellia encryption failed');
+        throw new Error('Camellia encryption process failed');
       }
 
       // Convert output to Uint8Array
@@ -48,11 +52,7 @@ export class Camellia implements SymmetricEncryptionAlgorithm {
 
       return { ciphertext, iv };
     } catch (err) {
-      if (err instanceof Error) {
-        throw new Error(`Camellia encryption failed: ${err.message}`);
-      } else {
-        throw new Error('Camellia encryption failed: Unknown error');
-      }
+      throw new Error(`Camellia encryption failed: ${err instanceof Error ? err.message : 'Unknown error'}`);
     }
   }
 
@@ -64,13 +64,13 @@ export class Camellia implements SymmetricEncryptionAlgorithm {
       const forgeIv = forge.util.createBuffer(Buffer.from(encResult.iv).toString('binary'));
 
       // Create decipher
-      const decipher = forge.cipher.createDecipher('AES-CBC', forgeKey);
+      const decipher = forge.cipher.createDecipher('CAMELLIA-CBC', forgeKey);
       decipher.start({ iv: forgeIv });
       decipher.update(forgeCiphertext);
       const success = decipher.finish();
 
       if (!success) {
-        throw new Error('Camellia decryption failed');
+        throw new Error('Camellia decryption process failed');
       }
 
       // Convert output back to Uint8Array
@@ -78,11 +78,7 @@ export class Camellia implements SymmetricEncryptionAlgorithm {
         Buffer.from(decipher.output.getBytes(), 'binary')
       );
     } catch (err) {
-      if (err instanceof Error) {
-        throw new Error(`Camellia decryption failed: ${err.message}`);
-      } else {
-        throw new Error('Camellia decryption failed: Unknown error');
-      }
+      throw new Error(`Camellia decryption failed: ${err instanceof Error ? err.message : 'Unknown error'}`);
     }
   }
 }
