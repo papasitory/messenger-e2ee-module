@@ -1,7 +1,5 @@
 import { CryptoUtils } from '../utils/crypto-utils';
 import { AES_GCM } from '../algorithms/aes';
-import { Blowfish } from '../algorithms/blowfish';
-import { Camellia } from '../algorithms/camellia';
 import { ECDH } from '../algorithms/ecdh';
 import { Ed25519 } from '../algorithms/ed25519';
 
@@ -13,9 +11,6 @@ export class CryptoModule {
   
   // Симметричные алгоритмы
   static aesGcm = AES_GCM;
-  static blowfish = Blowfish;
-  static camellia = Camellia;
-  
   // Асимметричные алгоритмы
   static ecdh = ECDH;
   static ed25519 = Ed25519;
@@ -38,9 +33,6 @@ export class CryptoModule {
     switch (algorithm) {
       case 'aes-gcm':
         result = await AES_GCM.encrypt(data, key);
-        break;
-      case 'blowfish':
-        result = await Blowfish.encrypt(data, key);
         break;
       default:
         throw new Error(`Unsupported algorithm: ${algorithm}`);
@@ -69,9 +61,6 @@ export class CryptoModule {
       case 'aes-gcm':
         decrypted = await AES_GCM.decrypt(result, key);
         break;
-      case 'blowfish':
-        decrypted = await Blowfish.decrypt(result, key);
-        break;
       default:
         throw new Error(`Unsupported algorithm: ${algorithm}`);
     }
@@ -92,8 +81,6 @@ export class CryptoModule {
     switch (algorithm) {
       case 'aes-gcm':
         return await AES_GCM.generateKey(keySize);
-      case 'blowfish':
-        return await Blowfish.generateKey(keySize);
       default:
         throw new Error(`Unsupported algorithm: ${algorithm}`);
     }

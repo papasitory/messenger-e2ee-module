@@ -1,10 +1,638 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1745571665439" clover="3.2.0">
-  <project timestamp="1745571665439" name="All files">
-    <metrics statements="399" coveredstatements="311" conditionals="243" coveredconditionals="156" methods="80" coveredmethods="78" elements="722" coveredelements="545" complexity="0" loc="399" ncloc="399" packages="2" files="8" classes="8"/>
-    <package name="algorithms">
-      <metrics statements="343" coveredstatements="276" conditionals="220" coveredconditionals="143" methods="68" coveredmethods="66"/>
-      <file name="aes.ts" path="C:\Users\Ega\Desktop\messenger-e2ee-module\src\algorithms\aes.ts">
+<coverage generated="1746633919258" clover="3.2.0">
+  <project timestamp="1746633919258" name="All files">
+    <metrics statements="887" coveredstatements="658" conditionals="685" coveredconditionals="464" methods="255" coveredmethods="219" elements="1827" coveredelements="1341" complexity="0" loc="887" ncloc="887" packages="4" files="12" classes="12"/>
+    <package name="dist.algorithms">
+      <metrics statements="510" coveredstatements="392" conditionals="421" coveredconditionals="295" methods="174" coveredmethods="143"/>
+      <file name="aes.js" path="D:\Files\js\cryptolib\messenger-e2ee-module\dist\algorithms\aes.js">
+        <metrics statements="120" coveredstatements="81" conditionals="90" coveredconditionals="62" methods="30" coveredmethods="26"/>
+        <line num="2" count="1" type="cond" truecount="4" falsecount="1"/>
+        <line num="3" count="1349" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="1349" type="stmt"/>
+        <line num="5" count="1349" type="cond" truecount="7" falsecount="0"/>
+        <line num="6" count="1330" type="stmt"/>
+        <line num="8" count="1349" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="4" falsecount="1"/>
+        <line num="14" count="19" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="1" type="cond" truecount="3" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="19" type="cond" truecount="2" falsecount="1"/>
+        <line num="29" count="19" type="stmt"/>
+        <line num="30" count="1349" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="19" type="stmt"/>
+        <line num="32" count="19" type="stmt"/>
+        <line num="35" count="1" type="cond" truecount="3" falsecount="0"/>
+        <line num="36" count="53" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="53" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="52" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="95" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="53" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="49" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="55" count="2" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="64" count="22" type="cond" truecount="1" falsecount="0"/>
+        <line num="65" count="22" type="cond" truecount="2" falsecount="3"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="72" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="76" count="22" type="cond" truecount="4" falsecount="0"/>
+        <line num="77" count="21" type="stmt"/>
+        <line num="78" count="21" type="stmt"/>
+        <line num="80" count="1" type="stmt"/>
+        <line num="84" count="14" type="stmt"/>
+        <line num="86" count="14" type="cond" truecount="1" falsecount="0"/>
+        <line num="87" count="1" type="stmt"/>
+        <line num="89" count="13" type="stmt"/>
+        <line num="90" count="12" type="cond" truecount="2" falsecount="3"/>
+        <line num="91" count="0" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="94" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="95" count="0" type="stmt"/>
+        <line num="96" count="0" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="98" count="0" type="stmt"/>
+        <line num="99" count="0" type="stmt"/>
+        <line num="100" count="0" type="stmt"/>
+        <line num="103" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="107" count="12" type="cond" truecount="4" falsecount="0"/>
+        <line num="108" count="12" type="stmt"/>
+        <line num="109" count="12" type="stmt"/>
+        <line num="110" count="12" type="stmt"/>
+        <line num="111" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="112" count="3" type="stmt"/>
+        <line num="113" count="12" type="stmt"/>
+        <line num="114" count="12" type="stmt"/>
+        <line num="115" count="12" type="stmt"/>
+        <line num="116" count="12" type="stmt"/>
+        <line num="119" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="120" count="0" type="stmt"/>
+        <line num="123" count="0" type="stmt"/>
+        <line num="127" count="13" type="stmt"/>
+        <line num="129" count="13" type="cond" truecount="1" falsecount="0"/>
+        <line num="130" count="1" type="stmt"/>
+        <line num="132" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="133" count="1" type="stmt"/>
+        <line num="135" count="11" type="cond" truecount="1" falsecount="0"/>
+        <line num="136" count="1" type="stmt"/>
+        <line num="138" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="139" count="1" type="stmt"/>
+        <line num="141" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="142" count="1" type="stmt"/>
+        <line num="144" count="8" type="cond" truecount="2" falsecount="3"/>
+        <line num="145" count="0" type="stmt"/>
+        <line num="146" count="0" type="stmt"/>
+        <line num="147" count="0" type="stmt"/>
+        <line num="148" count="0" type="stmt"/>
+        <line num="149" count="0" type="stmt"/>
+        <line num="150" count="0" type="stmt"/>
+        <line num="151" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="152" count="0" type="stmt"/>
+        <line num="153" count="0" type="stmt"/>
+        <line num="154" count="0" type="stmt"/>
+        <line num="157" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="158" count="0" type="stmt"/>
+        <line num="161" count="8" type="cond" truecount="4" falsecount="0"/>
+        <line num="162" count="7" type="stmt"/>
+        <line num="163" count="7" type="stmt"/>
+        <line num="164" count="7" type="stmt"/>
+        <line num="165" count="7" type="stmt"/>
+        <line num="166" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="167" count="2" type="stmt"/>
+        <line num="168" count="7" type="stmt"/>
+        <line num="169" count="7" type="stmt"/>
+        <line num="170" count="5" type="stmt"/>
+        <line num="173" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="174" count="2" type="stmt"/>
+        <line num="177" count="1" type="stmt"/>
+        <line num="181" count="1" type="stmt"/>
+      </file>
+      <file name="blowfish.js" path="D:\Files\js\cryptolib\messenger-e2ee-module\dist\algorithms\blowfish.js">
+        <metrics statements="78" coveredstatements="56" conditionals="61" coveredconditionals="36" methods="33" coveredmethods="21"/>
+        <line num="2" count="1" type="cond" truecount="4" falsecount="1"/>
+        <line num="3" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="cond" truecount="0" falsecount="7"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="4" falsecount="1"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="1" type="cond" truecount="3" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="35" count="1" type="cond" truecount="3" falsecount="0"/>
+        <line num="36" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="3" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="21" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="49" count="4" type="stmt"/>
+        <line num="50" count="4" type="cond" truecount="6" falsecount="0"/>
+        <line num="51" count="4" type="stmt"/>
+        <line num="55" count="4" type="stmt"/>
+        <line num="56" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="57" count="3" type="stmt"/>
+        <line num="59" count="4" type="stmt"/>
+        <line num="63" count="3" type="stmt"/>
+        <line num="64" count="3" type="stmt"/>
+        <line num="68" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="69" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="72" count="3" type="stmt"/>
+        <line num="73" count="3" type="stmt"/>
+        <line num="77" count="4" type="stmt"/>
+        <line num="78" count="4" type="stmt"/>
+        <line num="80" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="84" count="4" type="stmt"/>
+        <line num="86" count="4" type="stmt"/>
+        <line num="87" count="4" type="stmt"/>
+        <line num="88" count="4" type="stmt"/>
+        <line num="89" count="4" type="stmt"/>
+        <line num="90" count="3" type="stmt"/>
+        <line num="91" count="3" type="stmt"/>
+        <line num="92" count="40" type="stmt"/>
+        <line num="93" count="3" type="stmt"/>
+        <line num="96" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="101" count="3" type="stmt"/>
+        <line num="102" count="3" type="stmt"/>
+        <line num="104" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="105" count="0" type="stmt"/>
+        <line num="108" count="3" type="stmt"/>
+        <line num="110" count="3" type="stmt"/>
+        <line num="111" count="30" type="stmt"/>
+        <line num="113" count="3" type="stmt"/>
+        <line num="114" count="3" type="stmt"/>
+        <line num="115" count="3" type="stmt"/>
+        <line num="116" count="3" type="stmt"/>
+        <line num="119" count="1" type="stmt"/>
+        <line num="120" count="1" type="stmt"/>
+        <line num="121" count="20" type="stmt"/>
+        <line num="124" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="129" count="1" type="stmt"/>
+      </file>
+      <file name="chacha20.js" path="D:\Files\js\cryptolib\messenger-e2ee-module\dist\algorithms\chacha20.js">
+        <metrics statements="74" coveredstatements="61" conditionals="49" coveredconditionals="38" methods="31" coveredmethods="26"/>
+        <line num="2" count="2" type="cond" truecount="4" falsecount="1"/>
+        <line num="3" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="cond" truecount="6" falsecount="1"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="2" type="cond" truecount="4" falsecount="1"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="2" type="cond" truecount="3" falsecount="0"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="1" type="cond" truecount="2" falsecount="1"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="2" type="cond" truecount="3" falsecount="0"/>
+        <line num="36" count="20" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="27" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="18" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="40" count="45" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="27" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="65" count="7" type="stmt"/>
+        <line num="66" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="67" count="5" type="stmt"/>
+        <line num="68" count="2" type="stmt"/>
+        <line num="69" count="2" type="stmt"/>
+        <line num="71" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="74" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="82" count="10" type="stmt"/>
+        <line num="83" count="10" type="stmt"/>
+        <line num="87" count="5" type="stmt"/>
+        <line num="88" count="5" type="stmt"/>
+        <line num="89" count="4" type="stmt"/>
+        <line num="90" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="92" count="4" type="stmt"/>
+        <line num="93" count="4" type="stmt"/>
+        <line num="94" count="4" type="stmt"/>
+        <line num="95" count="4" type="stmt"/>
+        <line num="98" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="99" count="0" type="stmt"/>
+        <line num="101" count="0" type="stmt"/>
+        <line num="106" count="2" type="stmt"/>
+        <line num="107" count="2" type="stmt"/>
+        <line num="108" count="2" type="stmt"/>
+        <line num="109" count="2" type="stmt"/>
+        <line num="110" count="2" type="stmt"/>
+        <line num="111" count="2" type="stmt"/>
+        <line num="112" count="2" type="stmt"/>
+        <line num="115" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="116" count="0" type="stmt"/>
+        <line num="118" count="0" type="stmt"/>
+        <line num="123" count="2" type="stmt"/>
+      </file>
+      <file name="ecdh.js" path="D:\Files\js\cryptolib\messenger-e2ee-module\dist\algorithms\ecdh.js">
+        <metrics statements="92" coveredstatements="72" conditionals="90" coveredconditionals="63" methods="29" coveredmethods="25"/>
+        <line num="2" count="1" type="cond" truecount="4" falsecount="1"/>
+        <line num="3" count="429" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="429" type="stmt"/>
+        <line num="5" count="429" type="cond" truecount="7" falsecount="0"/>
+        <line num="6" count="423" type="stmt"/>
+        <line num="8" count="429" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="4" falsecount="1"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="1" type="cond" truecount="3" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="9" type="cond" truecount="2" falsecount="1"/>
+        <line num="29" count="9" type="stmt"/>
+        <line num="30" count="429" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="9" type="stmt"/>
+        <line num="32" count="9" type="stmt"/>
+        <line num="35" count="1" type="cond" truecount="3" falsecount="0"/>
+        <line num="36" count="22" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="27" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="18" type="stmt"/>
+        <line num="39" count="4" type="stmt"/>
+        <line num="40" count="40" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="27" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="58" count="5" type="stmt"/>
+        <line num="59" count="5" type="cond" truecount="6" falsecount="0"/>
+        <line num="60" count="5" type="stmt"/>
+        <line num="64" count="5" type="stmt"/>
+        <line num="65" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="69" count="5" type="cond" truecount="0" falsecount="1"/>
+        <line num="70" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="71" count="1" type="stmt"/>
+        <line num="73" count="4" type="cond" truecount="2" falsecount="3"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="87" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="90" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="91" count="3" type="stmt"/>
+        <line num="92" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="93" count="3" type="stmt"/>
+        <line num="94" count="3" type="stmt"/>
+        <line num="95" count="3" type="stmt"/>
+        <line num="96" count="3" type="stmt"/>
+        <line num="102" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="105" count="1" type="stmt"/>
+        <line num="109" count="8" type="cond" truecount="0" falsecount="1"/>
+        <line num="110" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="111" count="1" type="stmt"/>
+        <line num="113" count="7" type="cond" truecount="1" falsecount="1"/>
+        <line num="114" count="7" type="cond" truecount="2" falsecount="3"/>
+        <line num="115" count="0" type="stmt"/>
+        <line num="116" count="0" type="stmt"/>
+        <line num="120" count="0" type="stmt"/>
+        <line num="124" count="0" type="stmt"/>
+        <line num="128" count="0" type="stmt"/>
+        <line num="131" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="134" count="7" type="cond" truecount="4" falsecount="0"/>
+        <line num="135" count="6" type="stmt"/>
+        <line num="136" count="6" type="stmt"/>
+        <line num="137" count="6" type="stmt"/>
+        <line num="138" count="6" type="stmt"/>
+        <line num="139" count="6" type="stmt"/>
+        <line num="140" count="6" type="stmt"/>
+        <line num="143" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="146" count="1" type="stmt"/>
+        <line num="150" count="1" type="stmt"/>
+        <line num="152" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="153" count="1" type="stmt"/>
+        <line num="155" count="4" type="stmt"/>
+        <line num="158" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="159" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="160" count="1" type="stmt"/>
+        <line num="162" count="3" type="stmt"/>
+        <line num="163" count="3" type="stmt"/>
+      </file>
+      <file name="ed25519.js" path="D:\Files\js\cryptolib\messenger-e2ee-module\dist\algorithms\ed25519.js">
+        <metrics statements="89" coveredstatements="67" conditionals="83" coveredconditionals="58" methods="31" coveredmethods="26"/>
+        <line num="2" count="1" type="cond" truecount="4" falsecount="1"/>
+        <line num="3" count="456" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="456" type="stmt"/>
+        <line num="5" count="456" type="cond" truecount="7" falsecount="0"/>
+        <line num="6" count="450" type="stmt"/>
+        <line num="8" count="456" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="4" falsecount="1"/>
+        <line num="14" count="12" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="1" type="cond" truecount="3" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="12" type="cond" truecount="2" falsecount="1"/>
+        <line num="29" count="12" type="stmt"/>
+        <line num="30" count="456" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="12" type="stmt"/>
+        <line num="32" count="12" type="stmt"/>
+        <line num="35" count="1" type="cond" truecount="3" falsecount="0"/>
+        <line num="36" count="12" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="36" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="12" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="39" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="36" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="48" count="5" type="stmt"/>
+        <line num="49" count="5" type="stmt"/>
+        <line num="53" count="6" type="stmt"/>
+        <line num="54" count="6" type="stmt"/>
+        <line num="58" count="7" type="stmt"/>
+        <line num="59" count="7" type="stmt"/>
+        <line num="63" count="5" type="stmt"/>
+        <line num="64" count="5" type="cond" truecount="2" falsecount="3"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="77" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="80" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="81" count="4" type="stmt"/>
+        <line num="82" count="4" type="stmt"/>
+        <line num="83" count="4" type="stmt"/>
+        <line num="87" count="3" type="stmt"/>
+        <line num="93" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="96" count="1" type="stmt"/>
+        <line num="100" count="6" type="stmt"/>
+        <line num="101" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="102" count="1" type="stmt"/>
+        <line num="104" count="5" type="cond" truecount="2" falsecount="3"/>
+        <line num="105" count="0" type="stmt"/>
+        <line num="106" count="0" type="stmt"/>
+        <line num="109" count="0" type="stmt"/>
+        <line num="110" count="0" type="stmt"/>
+        <line num="113" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="116" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="117" count="4" type="stmt"/>
+        <line num="118" count="4" type="stmt"/>
+        <line num="119" count="4" type="stmt"/>
+        <line num="124" count="4" type="stmt"/>
+        <line num="125" count="3" type="stmt"/>
+        <line num="128" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="131" count="1" type="stmt"/>
+        <line num="135" count="7" type="stmt"/>
+        <line num="136" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="137" count="1" type="stmt"/>
+        <line num="139" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="140" count="1" type="stmt"/>
+        <line num="142" count="5" type="cond" truecount="2" falsecount="3"/>
+        <line num="143" count="0" type="stmt"/>
+        <line num="144" count="0" type="stmt"/>
+        <line num="147" count="0" type="stmt"/>
+        <line num="150" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="153" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="154" count="4" type="stmt"/>
+        <line num="155" count="4" type="stmt"/>
+        <line num="156" count="4" type="stmt"/>
+        <line num="161" count="4" type="stmt"/>
+        <line num="164" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="167" count="1" type="stmt"/>
+        <line num="171" count="1" type="stmt"/>
+      </file>
+      <file name="kyber.js" path="D:\Files\js\cryptolib\messenger-e2ee-module\dist\algorithms\kyber.js">
+        <metrics statements="57" coveredstatements="55" conditionals="48" coveredconditionals="38" methods="20" coveredmethods="19"/>
+        <line num="2" count="1" type="cond" truecount="3" falsecount="0"/>
+        <line num="3" count="15" type="cond" truecount="1" falsecount="1"/>
+        <line num="4" count="30" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="7" count="25" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="30" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="7" type="stmt"/>
+        <line num="18" count="7" type="cond" truecount="6" falsecount="0"/>
+        <line num="19" count="7" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="cond" truecount="6" falsecount="0"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="30" count="4" type="cond" truecount="6" falsecount="0"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="36" count="15" type="cond" truecount="1" falsecount="0"/>
+        <line num="37" count="14" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="43" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="46" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="51" count="7" type="cond" truecount="0" falsecount="1"/>
+        <line num="53" count="7" type="stmt"/>
+        <line num="54" count="7" type="stmt"/>
+        <line num="55" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="58" count="6" type="stmt"/>
+        <line num="59" count="6" type="stmt"/>
+        <line num="60" count="3" type="stmt"/>
+        <line num="66" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="71" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="73" count="4" type="stmt"/>
+        <line num="74" count="4" type="stmt"/>
+        <line num="75" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="76" count="1" type="stmt"/>
+        <line num="78" count="3" type="stmt"/>
+        <line num="79" count="3" type="stmt"/>
+        <line num="80" count="1" type="stmt"/>
+        <line num="86" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="91" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="93" count="4" type="stmt"/>
+        <line num="94" count="4" type="stmt"/>
+        <line num="95" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="96" count="1" type="stmt"/>
+        <line num="98" count="3" type="stmt"/>
+        <line num="99" count="3" type="stmt"/>
+        <line num="100" count="1" type="stmt"/>
+        <line num="103" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="108" count="1" type="stmt"/>
+        <line num="110" count="1" type="stmt"/>
+        <line num="111" count="1" type="stmt"/>
+        <line num="112" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="dist.utils">
+      <metrics statements="91" coveredstatements="63" conditionals="64" coveredconditionals="47" methods="29" coveredmethods="24"/>
+      <file name="crypto-utils.js" path="D:\Files\js\cryptolib\messenger-e2ee-module\dist\utils\crypto-utils.js">
+        <metrics statements="91" coveredstatements="63" conditionals="64" coveredconditionals="47" methods="29" coveredmethods="24"/>
+        <line num="2" count="5" type="cond" truecount="4" falsecount="1"/>
+        <line num="3" count="3834" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="3834" type="stmt"/>
+        <line num="5" count="3834" type="cond" truecount="7" falsecount="0"/>
+        <line num="6" count="3780" type="stmt"/>
+        <line num="8" count="3834" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="5" type="cond" truecount="4" falsecount="1"/>
+        <line num="14" count="54" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="5" type="cond" truecount="3" falsecount="0"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="20" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="27" count="5" type="stmt"/>
+        <line num="28" count="54" type="cond" truecount="2" falsecount="1"/>
+        <line num="29" count="54" type="stmt"/>
+        <line num="30" count="3834" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="54" type="stmt"/>
+        <line num="32" count="54" type="stmt"/>
+        <line num="35" count="5" type="cond" truecount="3" falsecount="0"/>
+        <line num="36" count="54" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="55" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="54" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="108" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="55" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="5" type="stmt"/>
+        <line num="45" count="5" type="stmt"/>
+        <line num="51" count="55" type="stmt"/>
+        <line num="52" count="55" type="cond" truecount="2" falsecount="2"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="57" count="55" type="cond" truecount="4" falsecount="0"/>
+        <line num="58" count="54" type="stmt"/>
+        <line num="59" count="54" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="68" count="11" type="cond" truecount="1" falsecount="1"/>
+        <line num="70" count="11" type="stmt"/>
+        <line num="71" count="37" type="stmt"/>
+        <line num="73" count="11" type="stmt"/>
+        <line num="75" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="85" count="9" type="cond" truecount="1" falsecount="1"/>
+        <line num="87" count="9" type="stmt"/>
+        <line num="88" count="9" type="stmt"/>
+        <line num="89" count="9" type="stmt"/>
+        <line num="90" count="31" type="stmt"/>
+        <line num="92" count="9" type="stmt"/>
+        <line num="94" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="96" count="0" type="stmt"/>
+        <line num="98" count="0" type="stmt"/>
+        <line num="104" count="2" type="stmt"/>
+        <line num="113" count="1" type="stmt"/>
+        <line num="122" count="2" type="stmt"/>
+        <line num="126" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="127" count="1" type="stmt"/>
+        <line num="129" count="2" type="stmt"/>
+        <line num="135" count="2" type="stmt"/>
+        <line num="139" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="140" count="1" type="stmt"/>
+        <line num="142" count="2" type="stmt"/>
+        <line num="148" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="149" count="2" type="stmt"/>
+        <line num="151" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="152" count="0" type="stmt"/>
+        <line num="155" count="0" type="stmt"/>
+        <line num="156" count="0" type="stmt"/>
+        <line num="157" count="0" type="stmt"/>
+        <line num="159" count="0" type="stmt"/>
+        <line num="165" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="166" count="2" type="stmt"/>
+        <line num="168" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="169" count="0" type="stmt"/>
+        <line num="172" count="0" type="stmt"/>
+        <line num="173" count="0" type="stmt"/>
+        <line num="174" count="0" type="stmt"/>
+        <line num="176" count="0" type="stmt"/>
+        <line num="182" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="183" count="1" type="stmt"/>
+        <line num="184" count="2" type="stmt"/>
+        <line num="185" count="2" type="stmt"/>
+        <line num="186" count="6" type="stmt"/>
+        <line num="188" count="2" type="stmt"/>
+        <line num="191" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.algorithms">
+      <metrics statements="230" coveredstatements="168" conditionals="177" coveredconditionals="109" methods="40" coveredmethods="40"/>
+      <file name="aes.ts" path="D:\Files\js\cryptolib\messenger-e2ee-module\src\algorithms\aes.ts">
         <metrics statements="79" coveredstatements="48" conditionals="49" coveredconditionals="28" methods="10" coveredmethods="10"/>
         <line num="2" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
@@ -86,129 +714,7 @@
         <line num="156" count="2" type="stmt"/>
         <line num="159" count="1" type="stmt"/>
       </file>
-      <file name="blowfish.ts" path="C:\Users\Ega\Desktop\messenger-e2ee-module\src\algorithms\blowfish.ts">
-        <metrics statements="40" coveredstatements="38" conditionals="20" coveredconditionals="15" methods="12" coveredmethods="10"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="9" count="4" type="cond" truecount="6" falsecount="0"/>
-        <line num="10" count="4" type="stmt"/>
-        <line num="14" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
-        <line num="24" count="4" type="cond" truecount="0" falsecount="1"/>
-        <line num="25" count="4" type="cond" truecount="4" falsecount="0"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="28" count="3" type="stmt"/>
-        <line num="29" count="3" type="stmt"/>
-        <line num="33" count="4" type="stmt"/>
-        <line num="35" count="4" type="cond" truecount="1" falsecount="1"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="38" count="4" type="stmt"/>
-        <line num="41" count="4" type="stmt"/>
-        <line num="42" count="4" type="stmt"/>
-        <line num="43" count="4" type="stmt"/>
-        <line num="45" count="4" type="stmt"/>
-        <line num="51" count="3" type="stmt"/>
-        <line num="53" count="3" type="stmt"/>
-        <line num="54" count="40" type="stmt"/>
-        <line num="56" count="3" type="stmt"/>
-        <line num="58" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="63" count="3" type="stmt"/>
-        <line num="65" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="68" count="3" type="stmt"/>
-        <line num="71" count="3" type="stmt"/>
-        <line num="72" count="30" type="stmt"/>
-        <line num="74" count="3" type="stmt"/>
-        <line num="75" count="3" type="stmt"/>
-        <line num="76" count="3" type="stmt"/>
-        <line num="78" count="3" type="stmt"/>
-        <line num="82" count="1" type="stmt"/>
-        <line num="88" count="1" type="stmt"/>
-        <line num="89" count="20" type="stmt"/>
-        <line num="91" count="2" type="cond" truecount="1" falsecount="1"/>
-      </file>
-      <file name="camellia.ts" path="C:\Users\Ega\Desktop\messenger-e2ee-module\src\algorithms\camellia.ts">
-        <metrics statements="40" coveredstatements="40" conditionals="15" coveredconditionals="12" methods="7" coveredmethods="7"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="7" count="4" type="cond" truecount="6" falsecount="0"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="12" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="15" count="4" type="stmt"/>
-        <line num="19" count="2" type="stmt"/>
-        <line num="22" count="4" type="cond" truecount="0" falsecount="1"/>
-        <line num="23" count="4" type="stmt"/>
-        <line num="24" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="27" count="3" type="stmt"/>
-        <line num="28" count="3" type="stmt"/>
-        <line num="32" count="4" type="stmt"/>
-        <line num="34" count="4" type="stmt"/>
-        <line num="35" count="4" type="stmt"/>
-        <line num="36" count="4" type="stmt"/>
-        <line num="39" count="4" type="stmt"/>
-        <line num="40" count="4" type="stmt"/>
-        <line num="41" count="4" type="stmt"/>
-        <line num="42" count="4" type="stmt"/>
-        <line num="44" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="45" count="2" type="stmt"/>
-        <line num="49" count="2" type="stmt"/>
-        <line num="53" count="2" type="stmt"/>
-        <line num="55" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="60" count="2" type="stmt"/>
-        <line num="62" count="2" type="stmt"/>
-        <line num="63" count="2" type="stmt"/>
-        <line num="64" count="2" type="stmt"/>
-        <line num="67" count="2" type="stmt"/>
-        <line num="68" count="2" type="stmt"/>
-        <line num="69" count="2" type="stmt"/>
-        <line num="70" count="2" type="stmt"/>
-        <line num="72" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="73" count="1" type="stmt"/>
-        <line num="77" count="1" type="stmt"/>
-        <line num="81" count="1" type="cond" truecount="1" falsecount="1"/>
-      </file>
-      <file name="chacha20.ts" path="C:\Users\Ega\Desktop\messenger-e2ee-module\src\algorithms\chacha20.ts">
-        <metrics statements="33" coveredstatements="30" conditionals="8" coveredconditionals="7" methods="8" coveredmethods="8"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="21" count="12" type="cond" truecount="1" falsecount="0"/>
-        <line num="23" count="2" type="stmt"/>
-        <line num="24" count="4" type="stmt"/>
-        <line num="26" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="28" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="36" count="10" type="stmt"/>
-        <line num="44" count="8" type="stmt"/>
-        <line num="46" count="7" type="stmt"/>
-        <line num="47" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="50" count="7" type="stmt"/>
-        <line num="52" count="7" type="stmt"/>
-        <line num="53" count="7" type="stmt"/>
-        <line num="55" count="6" type="stmt"/>
-        <line num="57" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="58" count="1" type="stmt"/>
-        <line num="60" count="0" type="stmt"/>
-        <line num="68" count="4" type="stmt"/>
-        <line num="70" count="4" type="stmt"/>
-        <line num="71" count="4" type="stmt"/>
-        <line num="73" count="4" type="stmt"/>
-        <line num="74" count="4" type="stmt"/>
-        <line num="76" count="3" type="stmt"/>
-        <line num="78" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="79" count="1" type="stmt"/>
-        <line num="81" count="0" type="stmt"/>
-      </file>
-      <file name="ecdh.ts" path="C:\Users\Ega\Desktop\messenger-e2ee-module\src\algorithms\ecdh.ts">
+      <file name="ecdh.ts" path="D:\Files\js\cryptolib\messenger-e2ee-module\src\algorithms\ecdh.ts">
         <metrics statements="57" coveredstatements="43" conditionals="49" coveredconditionals="29" methods="11" coveredmethods="11"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -268,7 +774,7 @@
         <line num="149" count="3" type="stmt"/>
         <line num="150" count="3" type="stmt"/>
       </file>
-      <file name="ed25519.ts" path="C:\Users\Ega\Desktop\messenger-e2ee-module\src\algorithms\ed25519.ts">
+      <file name="ed25519.ts" path="D:\Files\js\cryptolib\messenger-e2ee-module\src\algorithms\ed25519.ts">
         <metrics statements="50" coveredstatements="35" conditionals="42" coveredconditionals="24" methods="9" coveredmethods="9"/>
         <line num="3" count="1" type="stmt"/>
         <line num="5" count="5" type="stmt"/>
@@ -321,66 +827,66 @@
         <line num="141" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="145" count="1" type="stmt"/>
       </file>
-      <file name="kyber.ts" path="C:\Users\Ega\Desktop\messenger-e2ee-module\src\algorithms\kyber.ts">
-        <metrics statements="44" coveredstatements="42" conditionals="37" coveredconditionals="28" methods="11" coveredmethods="11"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="8" count="7" type="cond" truecount="6" falsecount="0"/>
-        <line num="9" count="7" type="stmt"/>
-        <line num="13" count="4" type="cond" truecount="6" falsecount="0"/>
-        <line num="14" count="4" type="stmt"/>
-        <line num="18" count="4" type="cond" truecount="6" falsecount="0"/>
-        <line num="19" count="4" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
+      <file name="kyber.ts" path="D:\Files\js\cryptolib\messenger-e2ee-module\src\algorithms\kyber.ts">
+        <metrics statements="44" coveredstatements="42" conditionals="37" coveredconditionals="28" methods="10" coveredmethods="10"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="7" type="cond" truecount="6" falsecount="0"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="14" count="4" type="cond" truecount="6" falsecount="0"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="19" count="4" type="cond" truecount="6" falsecount="0"/>
+        <line num="20" count="4" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
-        <line num="28" count="15" type="cond" truecount="1" falsecount="0"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="32" count="1" type="cond" truecount="3" falsecount="1"/>
-        <line num="33" count="0" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="30" count="15" type="cond" truecount="1" falsecount="0"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
         <line num="36" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="40" count="7" type="cond" truecount="0" falsecount="1"/>
-        <line num="41" count="7" type="stmt"/>
-        <line num="43" count="7" type="stmt"/>
-        <line num="44" count="7" type="stmt"/>
-        <line num="45" count="7" type="cond" truecount="1" falsecount="0"/>
-        <line num="46" count="1" type="stmt"/>
-        <line num="49" count="6" type="stmt"/>
-        <line num="51" count="3" type="stmt"/>
-        <line num="56" count="4" type="cond" truecount="1" falsecount="1"/>
-        <line num="61" count="4" type="stmt"/>
-        <line num="64" count="4" type="stmt"/>
-        <line num="66" count="4" type="stmt"/>
+        <line num="40" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="45" count="7" type="cond" truecount="0" falsecount="1"/>
+        <line num="47" count="7" type="stmt"/>
+        <line num="49" count="7" type="stmt"/>
+        <line num="50" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="54" count="6" type="stmt"/>
+        <line num="55" count="6" type="stmt"/>
+        <line num="57" count="3" type="stmt"/>
+        <line num="62" count="3" type="cond" truecount="1" falsecount="1"/>
         <line num="67" count="4" type="stmt"/>
-        <line num="68" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="69" count="1" type="stmt"/>
-        <line num="71" count="3" type="stmt"/>
-        <line num="73" count="1" type="stmt"/>
-        <line num="78" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="83" count="4" type="stmt"/>
-        <line num="87" count="4" type="stmt"/>
-        <line num="89" count="4" type="stmt"/>
-        <line num="90" count="4" type="stmt"/>
-        <line num="91" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="92" count="1" type="stmt"/>
-        <line num="95" count="3" type="stmt"/>
-        <line num="97" count="1" type="stmt"/>
-        <line num="99" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="71" count="4" type="stmt"/>
+        <line num="73" count="4" type="stmt"/>
+        <line num="74" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="78" count="3" type="stmt"/>
+        <line num="79" count="3" type="stmt"/>
+        <line num="81" count="1" type="stmt"/>
+        <line num="86" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="91" count="4" type="stmt"/>
+        <line num="96" count="4" type="stmt"/>
+        <line num="98" count="4" type="stmt"/>
+        <line num="99" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="100" count="1" type="stmt"/>
+        <line num="103" count="3" type="stmt"/>
+        <line num="104" count="3" type="stmt"/>
+        <line num="106" count="1" type="stmt"/>
+        <line num="108" count="2" type="cond" truecount="1" falsecount="1"/>
       </file>
     </package>
-    <package name="utils">
+    <package name="src.utils">
       <metrics statements="56" coveredstatements="35" conditionals="23" coveredconditionals="13" methods="12" coveredmethods="12"/>
-      <file name="crypto-utils.ts" path="C:\Users\Ega\Desktop\messenger-e2ee-module\src\utils\crypto-utils.ts">
+      <file name="crypto-utils.ts" path="D:\Files\js\cryptolib\messenger-e2ee-module\src\utils\crypto-utils.ts">
         <metrics statements="56" coveredstatements="35" conditionals="23" coveredconditionals="13" methods="12" coveredmethods="12"/>
-        <line num="4" count="6" type="stmt"/>
-        <line num="9" count="56" type="cond" truecount="2" falsecount="2"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="9" count="35" type="cond" truecount="2" falsecount="2"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
-        <line num="13" count="56" type="cond" truecount="4" falsecount="0"/>
-        <line num="14" count="110" type="stmt"/>
-        <line num="15" count="55" type="stmt"/>
+        <line num="13" count="35" type="cond" truecount="4" falsecount="0"/>
+        <line num="14" count="68" type="stmt"/>
+        <line num="15" count="34" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
         <line num="24" count="11" type="cond" truecount="1" falsecount="1"/>
         <line num="26" count="11" type="stmt"/>
