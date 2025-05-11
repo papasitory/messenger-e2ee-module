@@ -1,5 +1,8 @@
 node_modules/
 
+src/algorithms/chacha20.ts
+src/algorithms/blowfish.ts
+
 dist/
 
 logs/
